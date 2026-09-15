@@ -23,8 +23,6 @@
 > [!NOTE]
 > This repository focuses on **research papers**. The main body is organized by staining task and input/output modality rather than by publication venue.
 
----
-
 ## ✨ Table of Contents
 
 - [Reviews](#reviews)
@@ -36,7 +34,6 @@
 - [Clinical / Validation-Oriented Virtual Staining](#clinical-validation)
 - [Scope & Terminology](#scope-terminology)
 
----
 
 <a id="reviews"></a>
 
@@ -55,7 +52,6 @@
 | 2022 | [Virtual tissue staining in pathology using machine learning](https://doi.org/10.1080/14737159.2022.2153040) | *Expert Review of Molecular Diagnostics* |
 | 2020 | [Emerging advances to transform histopathology using virtual staining](https://doi.org/10.1186/s43074-020-00020-1) | *BME Frontiers* |
 
----
 
 <a id="label-free-h-e"></a>
 
@@ -92,7 +88,6 @@
 | 2019 | [Digital staining through the application of deep neural networks to multi-modal multi-photon microscopy](https://doi.org/10.1364/BOE.10.001339) | *Biomedical Optics Express* | multiphoton |
 | 2018 | [Towards Virtual H&E Staining of Hyperspectral Lung Histology Images Using Conditional Generative Adversarial Networks](https://doi.org/10.1109/ICCVW.2017.15) | *ICCV Workshops* | hyperspectral |
 
----
 
 <a id="virtual-ihc-if"></a>
 
@@ -119,7 +114,6 @@
 | 2018 | [SHIFT: speedy histopathological-to-immunofluorescent translation of whole slide images using conditional generative adversarial networks](https://doi.org/10.1117/12.2293249) | *SPIE Medical Imaging* | histology → IF |
 | 2018 | [In Silico Labeling: Predicting Fluorescent Labels in Unlabeled Images](https://doi.org/10.1016/j.cell.2018.03.040) | *Cell* | label-free → IF |
 
----
 
 <a id="stain-to-stain"></a>
 
@@ -140,7 +134,6 @@
 | 2019 | [Stain-Transforming Cycle-Consistent Generative Adversarial Networks for Improved Segmentation of Renal Histopathology](https://proceedings.mlr.press/v102/de-bel19a.html) | *MIDL 2019* | stain transformation |
 | 2017 | [Virtual staining of colon cancer tissue by label-free Raman micro-spectroscopy](https://doi.org/10.1039/C6AN02072K) | *Analyst* | Raman → histology |
 
----
 
 <a id="virtual-fluorescence"></a>
 
@@ -161,7 +154,6 @@
 | 2018 | [Label-free prediction of three-dimensional fluorescence images from transmitted-light microscopy](https://doi.org/10.1038/s41592-018-0111-2) | *Nature Methods* | transmitted light → 3D fluorescence |
 | 2018 | [In Silico Labeling: Predicting Fluorescent Labels in Unlabeled Images](https://doi.org/10.1016/j.cell.2018.03.040) | *Cell* | phase → fluorescence |
 
----
 
 <a id="foundational"></a>
 
@@ -178,7 +170,6 @@
 | 2005 | [Digital staining of pathological tissue specimens using spectral transmittance](https://doi.org/10.1117/12.595016) | *SPIE Medical Imaging* |
 | 2005 | [Digital staining for multispectral images of pathological tissue specimens based on combined classification of spectral transmittance](https://doi.org/10.1016/j.compmedimag.2005.09.003) | *Computerized Medical Imaging and Graphics* |
 
----
 
 <a id="clinical-validation"></a>
 
@@ -194,7 +185,6 @@
 | 2021 | [Biopsy-free in vivo virtual histology of skin using deep learning](https://doi.org/10.1038/s41377-021-00674-8) | *Light: Science & Applications* |
 | 2020 | [A machine learning algorithm for simulating immunohistochemistry: development of SOX10 virtual IHC and evaluation on primarily melanocytic neoplasms](https://pubmed.ncbi.nlm.nih.gov/32392471/) | *Modern Pathology* |
 
----
 
 <a id="scope-terminology"></a>
 
@@ -217,7 +207,7 @@ Contributions are welcome. Please keep entries focused on **peer-reviewed papers
 
 If this collection is useful to you, consider giving the repository a ⭐.
 
----
+[![Star History Chart](https://api.star-history.com/svg?repos=diaoquesang/Awesome-Virtual-Staining&type=Date)](https://star-history.com/#diaoquesang/Awesome-Virtual-Staining&Date)
 
 <p align="center">
   <sub>Curated for researchers in computational pathology, biomedical optics, medical image analysis, and generative modeling.</sub>
