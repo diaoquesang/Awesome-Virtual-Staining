@@ -7,20 +7,18 @@
 
 <p align="center">
   <a href="#reviews">Reviews</a> ·
-  <a href="#label-free-virtual-h--e-histological-staining">Label-Free H&E</a> ·
-  <a href="#virtual-ihc-immunofluorescence-molecular-staining">Virtual IHC / IF</a> ·
-  <a href="#stain-to-stain-translation--virtual-restaining">Stain-to-Stain</a> ·
-  <a href="#virtual-fluorescence--in-silico-labeling">Virtual Fluorescence</a> ·
-  <a href="#other-early--foundational-digital-staining">Foundational</a> ·
-  <a href="#clinical--validation-oriented-virtual-staining">Clinical Validation</a>
+  <a href="#label-free-h-e">Label-Free H&E</a> ·
+  <a href="#virtual-ihc-if">Virtual IHC / IF</a> ·
+  <a href="#stain-to-stain">Stain-to-Stain</a> ·
+  <a href="#virtual-fluorescence">Virtual Fluorescence</a> ·
+  <a href="#foundational">Foundational</a> ·
+  <a href="#clinical-validation">Clinical Validation</a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Papers-80%2B-8A2BE2?style=flat-square" alt="Papers">
   <img src="https://img.shields.io/badge/Coverage-2005--2026-405DE6?style=flat-square" alt="Coverage">
   <img src="https://img.shields.io/badge/Focus-Virtual%20Staining-7A5195?style=flat-square" alt="Focus">
-  <img src="https://img.shields.io/badge/Updated-2026--09--15-444?style=flat-square" alt="Updated">
-</p>
+  </p>
 
 > [!NOTE]
 > This repository focuses on **research papers**. The main body is organized by staining task and input/output modality rather than by publication venue.
@@ -30,15 +28,17 @@
 ## ✨ Table of Contents
 
 - [Reviews](#reviews)
-- [Label-Free Virtual H&E / Histological Staining](#label-free-virtual-h--e-histological-staining)
-- [Virtual IHC / Immunofluorescence / Molecular Staining](#virtual-ihc-immunofluorescence-molecular-staining)
-- [Stain-to-Stain Translation / Virtual Restaining](#stain-to-stain-translation--virtual-restaining)
-- [Virtual Fluorescence / In-Silico Labeling](#virtual-fluorescence--in-silico-labeling)
-- [Other Early / Foundational Digital Staining](#other-early--foundational-digital-staining)
-- [Clinical / Validation-Oriented Virtual Staining](#clinical--validation-oriented-virtual-staining)
-- [Scope & Terminology](#scope--terminology)
+- [Label-Free Virtual H&E / Histological Staining](#label-free-h-e)
+- [Virtual IHC / Immunofluorescence / Molecular Staining](#virtual-ihc-if)
+- [Stain-to-Stain Translation / Virtual Restaining](#stain-to-stain)
+- [Virtual Fluorescence / In-Silico Labeling](#virtual-fluorescence)
+- [Other Early / Foundational Digital Staining](#foundational)
+- [Clinical / Validation-Oriented Virtual Staining](#clinical-validation)
+- [Scope & Terminology](#scope-terminology)
 
 ---
+
+<a id="reviews"></a>
 
 ## 📚 Reviews
 
@@ -56,6 +56,8 @@
 | 2020 | [Emerging advances to transform histopathology using virtual staining](https://doi.org/10.1186/s43074-020-00020-1) | *BME Frontiers* |
 
 ---
+
+<a id="label-free-h-e"></a>
 
 ## Label-Free Virtual H&E / Histological Staining
 > Label-free or minimally labeled imaging → H&E / histological appearance.
@@ -92,6 +94,8 @@
 
 ---
 
+<a id="virtual-ihc-if"></a>
+
 ## Virtual IHC / Immunofluorescence / Molecular Staining
 > Computational prediction of molecular or immunostaining channels from routine or label-free imaging.
 
@@ -117,6 +121,8 @@
 
 ---
 
+<a id="stain-to-stain"></a>
+
 ## Stain-to-Stain Translation / Virtual Restaining
 > One histological stain → another stain or special stain.
 
@@ -135,6 +141,8 @@
 | 2017 | [Virtual staining of colon cancer tissue by label-free Raman micro-spectroscopy](https://doi.org/10.1039/C6AN02072K) | *Analyst* | Raman → histology |
 
 ---
+
+<a id="virtual-fluorescence"></a>
 
 ## Virtual Fluorescence / In-Silico Labeling
 > Label-free imaging → fluorescence, organelle, or molecular signal.
@@ -155,6 +163,8 @@
 
 ---
 
+<a id="foundational"></a>
+
 ## Other Early / Foundational Digital Staining
 > Early computational and optical foundations of digital staining.
 
@@ -169,6 +179,8 @@
 | 2005 | [Digital staining for multispectral images of pathological tissue specimens based on combined classification of spectral transmittance](https://doi.org/10.1016/j.compmedimag.2005.09.003) | *Computerized Medical Imaging and Graphics* |
 
 ---
+
+<a id="clinical-validation"></a>
 
 ## Clinical / Validation-Oriented Virtual Staining
 > Studies emphasizing diagnostic evaluation, robustness, and translational validation.
@@ -188,11 +200,9 @@
 
 The literature uses overlapping terms including **virtual staining**, **digital staining**, **in-silico staining**, **virtual histology**, **virtual fluorescence**, **computational staining**, and **pseudo-H&E**. This list follows the broad usage adopted by major reviews and includes both **label-free → stain** and **stain → stain** translation.
 
-### Date
-
-Last curated: **2026-09-15**
-
 ---
+
+<a id="scope-terminology"></a>
 
 ## 🧭 Scope & Terminology
 
