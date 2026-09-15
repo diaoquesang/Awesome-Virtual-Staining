@@ -206,7 +206,7 @@ Contributions are welcome. Please keep entries focused on **peer-reviewed papers
 
 ## ⭐ Star History
 
-If this collection is useful to you, consider giving the repository a ⭐.😄
+If this collection is useful to you, consider giving the repository a ⭐.
 
 [![Star History Chart](https://api.star-history.com/svg?repos=diaoquesang/Awesome-Virtual-Staining&type=Date)](https://star-history.com/#diaoquesang/Awesome-Virtual-Staining&Date)
 
