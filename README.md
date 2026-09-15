@@ -26,6 +26,7 @@
 ## ✨ Table of Contents
 
 - [Reviews](#reviews)
+- [本报告补充到仓库视野的内容](#report-dataset-additions)
 - [Label-Free Virtual H&E / Histological Staining](#label-free-h-e)
 - [Virtual IHC / Immunofluorescence / Molecular Staining](#virtual-ihc-if)
 - [Stain-to-Stain Translation / Virtual Restaining](#stain-to-stain)
@@ -33,6 +34,44 @@
 - [Other Early / Foundational Digital Staining](#foundational)
 - [Clinical / Validation-Oriented Virtual Staining](#clinical-validation)
 - [Scope & Terminology](#scope-terminology)
+
+
+<a id="report-dataset-additions"></a>
+
+## 本报告补充到仓库视野的内容
+
+> 本节根据《非配对组织虚拟染色数据集调研与实验设计建议》补充可直接用于数据准备和实验设计的资源。原仓库以论文为主，本节重点补足下载入口、数据层级、配对属性和建议用途。公开状态、许可和下载入口应在正式使用前再次核对。
+
+| 数据或资源 | 器官与染色或模态 | 数据层级 | 配对属性 | 建议用途 | 下载入口 |
+|---|---|---|---|---|---|
+| UniStain | 肺、肾、肝、乳腺；自荧光 → H&E | patch，来源为组织切片 | 原始配对，可按患者或切片拆散为非配对训练 | 多器官无标记主训练及器官 OOD | [GitHub](https://github.com/ckchanbq-2027/UniStain) |
+| E-Staining DermaRepo | 皮肤；未染色明场 → H&E | 87 张 WSI，来自 22 人 | 同名未染色、化学 H&E 和虚拟 H&E | 明场无标记主训练及 slide 级测试 | [Mendeley Data](https://data.mendeley.com/datasets/gxgg933ny3/1) |
+| ANHIR | 多器官、多染色；肾 H&E、Masson、PAS、PASM | 高分辨率整图 | 连续切片近配对，存在非刚性错位 | 非配对多染色主训练；保留患者级配对 OOD | [Grand Challenge](https://anhir.grand-challenge.org/Data/) |
+| UMDST 处理方案 | ANHIR 肾多染色 | 256 × 256 patch | 按域训练的非配对设置 | 复现肾多域基线及数据拆分 | [GitHub](https://github.com/linyiyang98/UMDST) |
+| Human Protein Atlas | 45 种正常组织、20 种癌组织；大量 IHC marker | TMA 核心和显微视野 JPG | 与 H&E 源池不配对 | 构建跨器官 IHC 目标域 | [Download](https://www.proteinatlas.org/about/download) |
+| TCGA GDC | 多癌种 H&E | SVS WSI | 非配对源域 | 大规模肿瘤 H&E 源池 | [GDC Portal](https://portal.gdc.cancer.gov/) |
+| GTEx | 54 个非病变组织部位 H&E | SVS WSI | 非配对源域 | 正常组织 H&E 源池及正常与肿瘤平衡 | [GTEx Portal](https://www.gtexportal.org/) |
+| PANDA | 前列腺 H&E，开发集 10616 张 WSI | WSI | 非配对源域 | 跨中心、扫描仪和器官泛化 | [Grand Challenge](https://panda.grand-challenge.org/data/) |
+| NCT-CRC-HE-100K | 结直肠 H&E，100000 张 224 × 224 图像 | patch | 来源于 86 张 WSI | 快速原型和结直肠 H&E 源域 | [Zenodo](https://zenodo.org/records/1214456) |
+| BCI | 乳腺 H&E → HER2 | 4873 对 1024 × 1024 patch | 配准相邻切片对 | 冻结的单 marker 配对 OOD | [Grand Challenge](https://bci.grand-challenge.org/bci/) |
+| MIST | 乳腺 H&E → HER2、ER、PR、Ki67 | 1024 × 1024 patch | 相邻切片对，存在错位 | 多 marker 条件控制和配对 OOD | [GitHub](https://github.com/lifangda01/AdaptiveSupervisedPatchNCE) |
+| ACROBAT | 乳腺 H&E 与 ER、PGR、HER2、Ki67 | 4212 张 WSI，1153 名患者 | slide 级相邻切片 | WSI 级配对 OOD 和非刚性错位测试 | [Grand Challenge](https://acrobat.grand-challenge.org/data/) |
+| HEMIT | 结直肠 H&E → DAPI、CD3、panCK mIHC | 1024 × 1024 TIF patch | 同切片重染并配准 | H&E → mIHC 跨模态 OOD | [GitHub](https://github.com/BianChang/HEMIT-DATASET) |
+| HNSCC mIF–mIHC comparison | 头颈鳞癌 mIF ↔ mIHC | 3216 张 512 × 512 patch | 同一组织重染，部分 ROI 需复核 | marker 定量和重染泛化 | [TCIA](https://doi.org/10.7937/TCIA.2020.T90F-WB82) |
+| DeepLIIF | 肺和膀胱 IHC → multiplex IF | 1264 组 512 × 512 图像 | 配准多通道图像 | IHC → mIF 与跨 marker 泛化 | [GitHub](https://github.com/nadeemlab/DeepLIIF) |
+| ORION CRC 与 MIPHEI ViT | 结直肠 H&E → 多 marker mIF | tile，含细胞分割和细胞类型 | 处理后的重染或配准数据 | 16 marker 跨数据集泛化 | [Zenodo](https://doi.org/10.5281/zenodo.15340874) |
+| A2H | 同一 H&E 组织的 Aperio 与 Hamamatsu 扫描 | 256 × 256 patch | 扫描仪配准对 | 将扫描仪色彩偏移与真正染色转换分离 | [GitHub](https://github.com/khtao/StainNet) |
+| UCLA ImageJ VirtualStain examples | 肾 Jones、肝 Masson；自荧光 → 染色 | FOV 和测试示例 | 配对示例 | 无标记多染色小样本验证 | [GitHub](https://github.com/whd0121/ImageJ-VirtualStain) |
+| Transplant virtual staining examples | 心、肺；H&E、Masson、EVG | .mat 和 .tif FOV 示例 | 同视野示例和化学真值 | 跨器官、跨特殊染色外部测试 | [Zenodo](https://doi.org/10.5281/zenodo.15713140) |
+
+### 对 Awesome Virtual Staining 仓库的补充结论
+
+- 仓库适合追踪论文与方法演进，但未统一提供数据规模、患者数、文件格式、patch 或 WSI 层级、许可和拆分信息。
+- 上表补充了非配对训练池和配对 OOD 数据。即使原始资源存在配对关系，也应先按患者或切片划分，再删除训练阶段可恢复配对关系的文件名、坐标和映射表。
+- BCI、MIST、ACROBAT、HEMIT 和 HNSCC 应优先冻结为配对 OOD；ANHIR、UniStain 和 DermaRepo 可在保留盲测映射的前提下构造非配对训练。
+- HPA 与 TCGA、GTEx、PANDA 或 NCT-CRC-HE-100K 的组合是真正的跨来源非配对方案，但必须控制器官、疾病、扫描仪和组织组成偏差。
+- 对 Flow Matching，训练单位建议从 256 或 512 patch 开始，最终必须回到患者级 WSI 检查拼接缝、色调漂移、结构幻觉和 marker 错位。
+- 论文中出现的数据不等于公开数据。仅有论文、模型权重、FOV 示例或受限临床数据的项目，应明确标为“方法线索”或“申请资源”，不能写成可直接下载的训练集。
 
 
 <a id="reviews"></a>
@@ -213,3 +252,4 @@ If this collection is useful to you, consider giving the repository a ⭐.
 <p align="center">
   <sub>Curated for researchers in computational pathology, biomedical optics, medical image analysis, and generative modeling.</sub>
 </p>
+
