@@ -196,12 +196,6 @@
 
 ---
 
-### Scope / terminology
-
-The literature uses overlapping terms including **virtual staining**, **digital staining**, **in-silico staining**, **virtual histology**, **virtual fluorescence**, **computational staining**, and **pseudo-H&E**. This list follows the broad usage adopted by major reviews and includes both **label-free → stain** and **stain → stain** translation.
-
----
-
 <a id="scope-terminology"></a>
 
 ## 🧭 Scope & Terminology
