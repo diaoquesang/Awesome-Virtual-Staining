@@ -60,6 +60,7 @@
 
 | Year | Paper | Venue | Input |
 |---|---|---|---|
+| 2026 | [PRISM: Distribution-Gated Flow Matching for Controllable Unpaired Image Translation](https://arxiv.org/abs/2608.06240) | *arXiv* | unstained tissue |
 | 2026 | [High-precision label-free virtual H&E staining of 3D holotomography using DAPI-guided conditional diffusion learning](https://doi.org/10.1007/s11548-026-03651-x) | *International Journal of Computer Assisted Radiology and Surgery* | 3D holotomography |
 | 2026 | [Generative AI for misalignment-resistant virtual staining to accelerate histopathology workflows](https://doi.org/10.1038/s41467-026-71038-2) | *Nature Communications* | label-free / paired tissue |
 | 2026 | [ViT-Stain: Vision transformer-driven virtual staining for skin histopathology via global contextual learning](https://doi.org/10.1371/journal.pone.0341311) | *PLOS ONE* | unstained microscopy |
